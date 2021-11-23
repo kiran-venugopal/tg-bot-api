@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: pwd
+  web: /bin/telegram-bot-api --api-id=17537141 --api-hash=e6de5065e2d3747a93e88ce53db05170
