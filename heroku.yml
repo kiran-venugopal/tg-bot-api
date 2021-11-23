@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: CMD [telegram-bot-api --api_id=<arg> --api-hash=<arg>]
+  web: telegram-bot-api --api_id=<arg> --api-hash=<arg>
