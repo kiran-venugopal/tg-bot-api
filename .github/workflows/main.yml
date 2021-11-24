@@ -17,7 +17,7 @@ jobs:
       
   deploy:
     name: Deploy to Heroku
-    #runs-on: ubuntu-18.04
+    runs-on: alpine:3.12.3
     steps:
 
     # Clone the repository
