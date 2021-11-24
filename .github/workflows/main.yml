@@ -17,7 +17,7 @@ jobs:
       
   deploy:
     name: Deploy to Heroku
-    runs-on: alpine:3.12.3
+    runs-on: alpine
     steps:
 
     # Clone the repository
