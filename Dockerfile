@@ -12,4 +12,4 @@ RUN export BUILD_ONLY_PKGS="alpine-sdk cmake git gperf linux-headers openssl-dev
 
 RUN apk add --no-cache libstdc++ openssl zlib
 
-CMD telegram-bot-api --local -p $PORT
+CMD telegram-bot-api -p $PORT
