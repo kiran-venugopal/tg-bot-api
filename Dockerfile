@@ -1,2 +1,3 @@
 FROM ghcr.io/bots-house/docker-telegram-bot-api:latest
-CMD  -p $PORT
+ENTRYPOINT ["/usr/local/bin/"]
+CMD telegram-bot-api -p $PORT
