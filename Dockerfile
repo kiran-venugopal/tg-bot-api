@@ -1,7 +1,5 @@
 FROM alpine
 
-LABEL maintainer="aofei@aofeisheng.com"
-
 RUN export BUILD_ONLY_PKGS="alpine-sdk cmake git gperf linux-headers openssl-dev zlib-dev" \
 	&& apk add --no-cache $BUILD_ONLY_PKGS \
 	&& git clone --recursive https://github.com/tdlib/telegram-bot-api.git /tmp/telegram-bot-api \
@@ -14,5 +12,4 @@ RUN export BUILD_ONLY_PKGS="alpine-sdk cmake git gperf linux-headers openssl-dev
 
 RUN apk add --no-cache libstdc++ openssl zlib
 
-ENTRYPOINT ["telegram-bot-api"]
-CMD ["-p","$PORT"]
+CMD telegram-bot-api -p $PORT
