@@ -10,8 +10,8 @@ on:
 env:
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
   APP_NAME: ${{ 'tg-bot-docker' }}
-  TELEGRAM_API_ID: ${{ '17537141' }}
-  TELEGRAM_API_HASH: ${{ 'e6de5065e2d3747a93e88ce53db05170' }}
+  TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
+  TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
 
 jobs:
       
